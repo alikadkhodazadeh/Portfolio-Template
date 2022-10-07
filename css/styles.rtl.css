@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script');
+@font-face {
+    font-family: 'Sahel';
+    src: url('../fonts/Sahel.woff2') format('woff2'), url('../fonts/Sahel.woff') format('woff');
+    font-weight: normal;
+}
+
 :root {
     --bg-black-900: #f2f2fc;
     --bg-black-100: #fdf9ff;
@@ -33,7 +39,7 @@ body {
     padding: 0;
     line-height: 1.5;
     font-size: 16px;
-    font-family: 'Poppins', sans-serif;
+    font-family: Sahel, sans-serif;
     background-color: #151515;
     direction: rtl;
 }
@@ -52,19 +58,11 @@ ul {
 }
 
 .hidden {
-    /* opacity: 0; */
-    /* height: 0 !important;
-    max-height: 0 !important;
-    min-height: 0 !important;
-    display: inline-block;
-    overflow: hidden;
-    transition: none; */
     display: none !important;
 }
-.d-none{
-    display: none !important;
+input,textarea, button{
+    font-family: Sahel, sans-serif;
 }
-
 .main-container {
     padding-right: 270px;
 }
@@ -164,6 +162,7 @@ ul {
     justify-content: center;
     align-items: center;
     z-index: 10;
+    transition: background 0.3s ease;
 }
 
 .aside .logo {
@@ -270,6 +269,7 @@ ul {
     display: block;
     color: var(--text-black-900);
     padding: 5px 15px;
+    transition: border 0.3s ease;
 }
 
 .aside .nav li a.active {
@@ -295,7 +295,7 @@ h3.hello {
 }
 
 h3.hello span {
-    font-family: 'Clicker Script', cursive;
+    /* font-family: 'Clicker Script', cursive; */
     font-size: 30px;
     font-weight: 700;
     color: var(--skin-color);
@@ -445,6 +445,16 @@ h3.my-profession {
     font-size: 16px;
     color: var(--text-black-900);
     text-transform: capitalize;
+    display: inline-block;
+    direction: ltr;
+}
+
+.dir-ltr {
+    direction: ltr;
+}
+
+.dir-rtl {
+    direction: ltr;
 }
 
 .about .about-content .skills .skill-item .progress {
@@ -457,7 +467,7 @@ h3.my-profession {
 
 .about .about-content .skills .skill-item .progress .progress-in {
     position: absolute;
-    right: 0;
+    left: 0;
     top: 0;
     height: 100%;
     border-radius: 4px;
@@ -499,6 +509,7 @@ h3.my-profession {
     border-radius: 10px;
     width: 100%;
     position: relative;
+    margin: 30px;
 }
 
 .about .about-content .timeline-item {
@@ -536,6 +547,9 @@ h3.my-profession {
     font-size: 14px;
     margin-bottom: 12px;
     color: var(--text-black-700);
+    display: flex;
+    justify-content: end;
+    flex-direction: column-reverse;
 }
 
 .about .about-content .timeline .timeline-date .fa {
@@ -697,6 +711,7 @@ h3.my-profession {
     font-size: 16px;
     line-height: 25px;
     color: var(--text-black-700);
+    direction: ltr;
 }
 
 .contact .contact-form {

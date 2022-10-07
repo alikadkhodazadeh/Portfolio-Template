@@ -50,6 +50,13 @@ const icon = dayNight.querySelector("i")
 dayNight.addEventListener("click", () => {
     const isDark = document.body.classList.toggle("dark")
     localStorage.setItem("dark-mode", isDark)
+    if (isDark) {
+        icon.classList.remove("fa-moon")
+        icon.classList.add("fa-sun")
+    } else {
+        icon.classList.remove("fa-sun")
+        icon.classList.add("fa-moon")
+    }
 })
 
 function darkModeManagement(darkMode) {

@@ -8,7 +8,7 @@
     <title>Document</title>
 
     <!-- ==== CSS Files ==== -->
-    <link rel="stylesheet" href="css/styles.min.css" />
+    <link rel="stylesheet" href="css/styles.rtl.css" />
     <link rel="stylesheet" href="css/skins/color-1.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled />
     <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled />
     <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled />
-    <link rel="stylesheet" href="css/styles-switcher.css">
+    <link rel="stylesheet" href="css/styles-switcher.rtl.css">
 
     <!-- ==== JS Files ==== -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" defer></script>
@@ -30,7 +30,7 @@
     <!-- ==== Main Container Start ==== -->
     <div class="main-container">
         <!-- ==== Aside Start ==== -->
-        <div class="aside">
+        <aside class="aside">
             <div class="logo">
                 <a href="#"><span>A</span>li</a>
             </div>
@@ -44,12 +44,12 @@
                 <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
                 <li><a href="#contact"><i class="fa fa-comment"></i>Contact</a></li>
             </ul>
-        </div>
+        </aside>
         <!-- ==== Aside End ==== -->
         <!-- ==== Main Content Start ==== -->
         <div class="main-content">
             <!-- ==== Home Section Start ==== -->
-            <section class="home section" id="home">
+            <section class="home section hidden d-none" id="home">
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
@@ -68,7 +68,7 @@
             <!-- ==== Home Section End ==== -->
 
             <!-- ==== About Section Start ==== -->
-            <section class="about section" id="about">
+            <section class="about section hidden d-none" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -306,7 +306,7 @@
             <!-- ==== About Section End ==== -->
 
             <!-- ==== Services Section Start ==== -->
-            <section class="service section" id="services">
+            <section class="services section hidden d-none" id="services">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -315,8 +315,8 @@
                     </div>
                     <div class="row">
                         <!-- ==== Services item Start ==== -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
+                        <div class="services-item padd-15">
+                            <div class="services-item-inner">
                                 <div class="icon">
                                     <i class="fa fa-mobile-alt"></i>
                                 </div>
@@ -324,8 +324,8 @@
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, iure?</p>
                             </div>
                         </div>
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
+                        <div class="services-item padd-15">
+                            <div class="services-item-inner">
                                 <div class="icon">
                                     <i class="fa fa-laptop-code"></i>
                                 </div>
@@ -333,8 +333,8 @@
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, iure?</p>
                             </div>
                         </div>
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
+                        <div class="services-item padd-15">
+                            <div class="services-item-inner">
                                 <div class="icon">
                                     <i class="fa fa-bullhorn"></i>
                                 </div>
@@ -342,8 +342,8 @@
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, iure?</p>
                             </div>
                         </div>
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
+                        <div class="services-item padd-15">
+                            <div class="services-item-inner">
                                 <div class="icon">
                                     <i class="fa fa-code"></i>
                                 </div>
@@ -351,8 +351,8 @@
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, iure?</p>
                             </div>
                         </div>
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
+                        <div class="services-item padd-15">
+                            <div class="services-item-inner">
                                 <div class="icon">
                                     <i class="fa fa-search"></i>
                                 </div>
@@ -360,8 +360,8 @@
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, iure?</p>
                             </div>
                         </div>
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
+                        <div class="services-item padd-15">
+                            <div class="services-item-inner">
                                 <div class="icon">
                                     <i class="fa fa-bullhorn"></i>
                                 </div>
@@ -376,7 +376,7 @@
             <!-- ==== Services Section End ==== -->
 
             <!-- ==== Portfolio Section Start ==== -->
-            <section class="portfolio section" id="portfolio">
+            <section class="portfolio section hidden d-none" id="portfolio">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -439,7 +439,7 @@
             <!-- ==== Portfolio Section End ==== -->
 
             <!-- ==== Contact Section Start ==== -->
-            <section class="contact section" id="contact">
+            <section class="contact section hidden d-none" id="contact">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">

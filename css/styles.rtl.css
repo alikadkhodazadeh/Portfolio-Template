@@ -128,6 +128,10 @@ button {
     margin-top: 8px;
 }
 
+.d-none {
+    display: none !important;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -325,6 +329,10 @@ h3.my-profession {
     margin-bottom: 70px;
     font-size: 20px;
     color: var(--text-black-700);
+}
+
+.home-info .btn{
+    margin-bottom: 30px;
 }
 
 .home .home-info {
@@ -573,11 +581,13 @@ h3.my-profession {
     text-align: justify;
     color: var(--text-black-900);
 }
-.skill-badge{
+
+.skill-badge {
     direction: ltr;
     display: flex;
     flex-wrap: wrap;
 }
+
 .skill-badge-item {
     direction: ltr;
     text-align: center;
@@ -589,10 +599,12 @@ h3.my-profession {
     cursor: default;
     transition: 0.3s all ease;
 }
-.skill-badge-item:hover{
+
+.skill-badge-item:hover {
     color: #fff;
     background-color: var(--skin-color);
 }
+
 
 /* services */
 
@@ -781,6 +793,9 @@ h3.my-profession {
 }
 
 @media (max-width: 1199px) {
+    .hidden {
+        display: block !important;
+    }
     .aside {
         right: -270px;
     }
@@ -790,6 +805,16 @@ h3.my-profession {
     .about .about-content .personal-info .info-item p span {
         display: block;
         margin-right: 0;
+    }
+    .home .home-img {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .home .home-img::before,
+    .home .home-img::after {
+        display: none !important;
     }
 }
 
@@ -806,8 +831,8 @@ h3.my-profession {
         flex: 0 0 100%;
         max-width: 100%;
     }
-    .home .home-img {
-        display: none;
+    .about .about-content .timeline{
+        margin: initial;
     }
 }
 

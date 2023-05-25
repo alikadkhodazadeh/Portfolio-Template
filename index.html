@@ -1,40 +1,38 @@
+
 <!DOCTYPE html>
 <html lang="fa">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ali Kadkhodazadeh</title>
+    <title></title>
+    <link rel="author" href="https://www.linkedin.com/in/https://www.linkedin.com/in/ali-kadkhodazadeh-74b0b8217" />
+
+    <!-- ==== Meta Tags ==== -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width" />
 
     <!-- ==== CSS Files ==== -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Clicker+Script">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/solid.min.css">
-    <link rel="stylesheet" href="css/styles.rtl.css" />
-    <link rel="stylesheet" href="css/skins/color-1.css" />
-
-    <!-- ==== Style Switcher ==== -->
-    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled />
-    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled />
-    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled />
-    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled />
-    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled />
-    <link rel="stylesheet" href="css/styles-switcher.rtl.css">
-
-    <!-- ==== JS Files ==== -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" defer></script>
-    <script src="js/style-switcher.js" defer></script>
-    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="css/bundle.min.css" />
 </head>
+<body>
+    <script>
+        const isDarkMode = localStorage.getItem("dark-mode") == null ?
+            window.matchMedia('(prefers-color-scheme: dark)').matches.toString() :
+            localStorage.getItem("dark-mode")
 
-<body class="dark">
+        if (isDarkMode === "true") {
+            document.body.classList.add("dark")
+        } else if (isDarkMode === "false") {
+            document.body.classList.remove("dark")
+        }
+    </script>
+    <div class="circle-blur"></div>
     <!-- ==== Main Container Start ==== -->
     <div class="main-container">
         <!-- ==== Aside Start ==== -->
         <aside class="aside">
             <div class="logo">
-                <a href="#"><span>A</span>li</a>
+                <a href=""><span>A</span>li</a>
             </div>
             <div class="nav-toggler">
                 <span></span>
@@ -42,8 +40,8 @@
             <ul class="nav">
                 <li><a href="#home"><i class="fa fa-home"></i>صفحه نخست</a></li>
                 <li><a href="#about"><i class="fa fa-user"></i>درباره من</a></li>
-                <li><a href="#services"><i class="fa fa-list"></i>خدمات قابل ارائه</a></li>
-                <li><a href="#portfolio"><i class="fa fa-briefcase"></i>نمونه کار ها</a></li>
+                    <li><a href="#services"><i class="fa fa-list"></i>خدمات قابل ارائه</a></li>
+                    <li><a href="#portfolio"><i class="fa fa-briefcase"></i>نمونه کار ها</a></li>
                 <li><a href="#contact"><i class="fa fa-comment"></i>تماس</a></li>
             </ul>
         </aside>
@@ -55,23 +53,40 @@
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
-                            <h3 class="hello">محمدعلی کدخدازاده <span class="name"></span></h3>
-                            <h3 class="my-profession"><span class="typing"></span></h3>
-                            <p>
-                                یک توسعه دهنده وب با انگیزه بالا و علاقه مند به یادگیری و کار تیمی. 12 سالم بود که ساختن وبلاگ رو یاد گرفتم چند سال بعد به هنرستان رفتم و با طراحی و برنامه نویسی آشنا و علاقه مند شدم. برنامه نویسی و طراحی قالب سایت رو بالاتر از سطح هنرستان یاد گرفتم.
-                                دوران هنرستان توی مسابقه کدنویسی با تفکر الگوریتمی شرکت کردم و رتبه دوم کشوری رو کسب کردم. بعد از اتمام هنرستان، یادگیری برنامه نویسی سمت سرور رو استارت زدم. علاقه زیادم به فریم ورک بک اند مایکروسافت باعث شد که علاقم به
-                                طراحی کمرنگ بشه و تمام تمرکزم سمت برنامه نویسی سمت سرور باشه.
-                            </p>
-                            <a href="3contact" class="btn hire-me">استخدام من</a>
+                            <h1 class="hello"> نام و نام خانوادگی<span class="name"></span></h1>
+                                    <h2 class="professions-item">توسعه دهنده وب</h2>
+                                    <h2 class="professions-item">طراح دیتابیس های رابطه ای</h2>
+                                    <h2 class="professions-item">تست نویس نرم افزار</h2>
+                                <h2 class="my-profession">
+                                    <span class="typing"></span>
+                                </h2>
+                            <h3 class="bio">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها</h3>
+                            <div class="buttons padd-15">
+                                    <form method="get" action="/GetCV">
+                                        <button type="submit" class="btn">دریافت رزومه</button>
+                                    </form>
+                                <a href="#contact" onclick="goToContact()" class="btn hire-me">استخدام من</a>
+                            </div>
                         </div>
-                        <div class="home-img padd-15">
-                            <img src="images/hero.png" alt="">
-                        </div>
+                            <div class="home-img padd-15">
+                                <img src="images/person/light.jpg" class="hidden" alt=" توسعه دهنده وب" id="personal-image" />
+                                <script>
+                                    try {
+                                        const image = document.querySelector("#personal-image")
+                                        if (isDarkMode.toString() == "true") {
+                                            image.setAttribute("src", "images/person/dark.jpg")
+                                        } else {
+                                            image.setAttribute("src", "images/person/light.jpg")
+                                        }
+                                        image.classList.remove("hidden")
+                                    } catch (e) {
+                                    }
+                                </script>
+                            </div>
                     </div>
                 </div>
             </section>
             <!-- ==== Home Section End ==== -->
-
             <!-- ==== About Section Start ==== -->
             <section class="about section hidden" id="about">
                 <div class="container">
@@ -84,341 +99,280 @@
                         <div class="about-content padd-15">
                             <div class="row">
                                 <div class="about-text padd-15">
-                                    <h3>محمدعلی کدخدازاده <span>توسعه دهنده وب</span></h3>
-                                    <p>فرزند عباس به کد ملی 0024370827 صادره از تهران متولد 1380/04/19 مجرد و درحال تحصیل در رشته اینترنت و شبکه های گسترده.</p>
-                                    <p>(معتقد به این که علم بهتر از ثروت است.)</p>
+                                    <h3> <span></span></h3>
+                                    <p>معرفی کوتاه</p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="personal-info padd-15">
                                     <div class="row">
                                         <div class="info-item padd-15">
-                                            <p>متولد : <span>19 تیر 1380</span></p>
+                                            <p>متولد : <span>1380/04/19</span></p>
                                         </div>
                                         <div class="info-item padd-15">
                                             <p>سن : <span>21</span></p>
                                         </div>
                                         <div class="info-item padd-15">
-                                            <p>ایمیل : <span class="dir-ltr">ali.kdz80@gmail.com</span></p>
+                                            <p>ایمیل : <span class="dir-ltr">example@gmail.com</span></p>
                                         </div>
                                         <div class="info-item padd-15">
-                                            <p>وب سایت : <span class="dir-ltr">www.alicoder.ir</span></p>
+                                            <p>وب سایت : <span class="dir-ltr"><a href="https://alicoder.ir">example.com</a></span></p>
                                         </div>
                                         <div class="info-item padd-15">
-                                            <p>سطح : <span>جونیور</span></p>
+                                            <p>سطح : <span>Junior</span></p>
                                         </div>
                                         <div class="info-item padd-15">
-                                            <p>همراه : <span class="dir-ltr">+98 910 748 5650</span></p>
+                                            <p>همراه : <span class="dir-ltr"><a href="tel: &#x2B;989104785650">&#x2B;98 910 478 5650</a></span></p>
                                         </div>
                                         <div class="info-item padd-15">
-                                            <p>نشانی : <span>تهران، اسلامشهر</span></p>
+                                            <p>نشانی : <span>تهران, صادقیه</span></p>
                                         </div>
                                         <div class="info-item padd-15">
-                                            <p>فریلنسر : <span>قبول میکنم</span></p>
+                                            <p>فریلنسر : <span>پروژه قبول میکنم</span></p>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="buttons padd-15">
-                                            <a href="#" class="btn">دانلود رزومه</a>
-                                            <a href="#contact" class="btn hire-me">استخدام من</a>
+                                                <form method="get" action="/GetCV">
+                                                    <button type="submit" class="btn">دریافت رزومه</button>
+                                                </form>
+                                            <a href="#contact" onclick="goToContact()" class="btn hire-me last">استخدام من</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="skills padd-15">
-                                    <div class="row d-none">
-                                        <div class="skill-item padd-15">
-                                            <h5>C#</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 80%;"></div>
-                                                <div class="skill-percent">80%</div>
+                                        <div class="row skills-help">
+                                            <div class="skills-help-item">
+                                                <i class="skills-circle border-high"></i>
+                                                <span>مهارت ها</span>
+                                            </div>
+                                            <div class="skills-help-item">
+                                                <i class="skills-circle border-middle"></i>
+                                                <span>توانایی ها</span>
+                                            </div>
+                                            <div class="skills-help-item">
+                                                <i class="skills-circle border-low"></i>
+                                                <span>آشنایی ها</span>
                                             </div>
                                         </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>ASP.NET</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 80%;"></div>
-                                                <div class="skill-percent">80%</div>
+                                        <div class="row">
+                                            <div class="skill-badge padd-15">
+                                                    <h2 class="skill-badge-item skill-high">C# Language</h2>
+                                                    <h2 class="skill-badge-item skill-high">ASP.NET Core</h2>
+                                                    <h2 class="skill-badge-item skill-high">xUnit Test</h2>
+                                                        <div class="li-break"></div>
+                                                    <h2 class="skill-badge-item skill-high">Razor Pages</h2>
+                                                    <h2 class="skill-badge-item skill-high">MVVM</h2>
+                                                    <h2 class="skill-badge-item skill-high">MVC</h2>
+                                                    <h2 class="skill-badge-item skill-high">REST API</h2>
+                                                        <div class="li-break"></div>
+                                                    <h2 class="skill-badge-item skill-high">Identity</h2>
+                                                    <h2 class="skill-badge-item skill-high">Role Permission</h2>
+                                                    <h2 class="skill-badge-item skill-high">OAuth</h2>
+                                                    <h2 class="skill-badge-item skill-high">JWT</h2>
+                                                        <div class="li-break"></div>
+                                                    <h2 class="skill-badge-item skill-high">Clean Architecture</h2>
+                                                    <h2 class="skill-badge-item skill-high">Onion Architecture</h2>
+                                                    <h2 class="skill-badge-item skill-high">EntityFramework Core</h2>
+                                                    <h2 class="skill-badge-item skill-high">Dapper</h2>
+                                                    <h2 class="skill-badge-item skill-high">SOLID</h2>
+                                                        <div class="li-break"></div>
+                                            </div>
+                                            <div class="skill-badge padd-15">
+                                                    <h2 class="skill-badge-item skill-middle">SQL Server</h2>
+                                                    <h2 class="skill-badge-item skill-middle">MongoDB</h2>
+                                                    <h2 class="skill-badge-item skill-middle">LiteDB</h2>
+                                                    <h2 class="skill-badge-item skill-middle">Redis</h2>
+                                                        <div class="li-break"></div>
+                                                    <h2 class="skill-badge-item skill-middle">HTML</h2>
+                                                    <h2 class="skill-badge-item skill-middle">CSS/SASS</h2>
+                                                    <h2 class="skill-badge-item skill-middle">JavaScript</h2>
+                                                    <h2 class="skill-badge-item skill-middle">Bootstrap</h2>
+                                                    <h2 class="skill-badge-item skill-middle">IIS Web Server</h2>
+                                                    <h2 class="skill-badge-item skill-middle">Plesk</h2>
+                                                    <h2 class="skill-badge-item skill-middle">CDN</h2>
+                                                        <div class="li-break"></div>
+                                            </div>
+                                            <div class="skill-badge padd-15">
+                                                    <h2 class="skill-badge-item skill-low">DDD</h2>
+                                                    <h2 class="skill-badge-item skill-low">Design Patterns</h2>
+                                                    <h2 class="skill-badge-item skill-low">Azure</h2>
+                                                    <h2 class="skill-badge-item skill-low">CI/CD</h2>
+                                                        <div class="li-break"></div>
+                                                    <h2 class="skill-badge-item skill-low">Wordpress</h2>
+                                                    <h2 class="skill-badge-item skill-low">SEO</h2>
+                                                    <h2 class="skill-badge-item skill-low">Nginx</h2>
+                                                    <h2 class="skill-badge-item skill-low">cPanel</h2>
+                                                        <div class="li-break"></div>
+                                                    <h2 class="skill-badge-item skill-low">Agile</h2>
+                                                    <h2 class="skill-badge-item skill-low">Scrum</h2>
+                                                    <h2 class="skill-badge-item skill-low">TDD</h2>
                                             </div>
                                         </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>SQL Server</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 60%;"></div>
-                                                <div class="skill-percent">60%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>MongoDB</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 60%;"></div>
-                                                <div class="skill-percent">60%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>Entity Framework</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 90%;"></div>
-                                                <div class="skill-percent">90%</div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <ul class="skill-badge padd-15">
-                                            <li class="skill-badge-item">C#</li>
-                                            <li class="skill-badge-item">ASP.NET Core</li>
-                                            <li class="skill-badge-item">REST API</li>
-                                            <li class="skill-badge-item">EntityFramework Core</li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="education padd-15">
-                                    <h3 class="title">تحصیلات</h3>
-                                    <div class="row">
-                                        <div class="timeline-box padd-15">
-                                            <div class="timeline shadow-dark">
-                                                <!-- ==== Timeline item Start ==== -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <strong>
-                                                            <i class="fa fa-calendar"></i> 1395 - 1398
-                                                        </strong>
-                                                    </h3>
-                                                    <h4 class="timeline-title">دوره هنرستان</h4>
-                                                    <p class="timeline-text">دوره هنرستان رو در رشته کامپیوتر گذروندم و با معدل 18.00 فارغ شدم.</p>
-                                                </div>
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <strong>
-                                                            <i class="fa fa-calendar"></i> 1399 - 1401
-                                                        </strong>
-                                                    </h3>
-                                                    <h4 class="timeline-title">کاردانی</h4>
-                                                    <p class="timeline-text">دوره کاردانی اینترنت و شبکه های گسترده رو در دانشگاه علمی کاربردی گذروندم.</p>
-                                                </div>
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <strong>
-                                                            <i class="fa fa-calendar"></i> 1401 - درحال گذراندن
-                                                        </strong>
-                                                    </h3>
-                                                    <h4 class="timeline-title">کارشناسی</h4>
-                                                    <p class="timeline-text">درحال گذراندن دوره کارشناسی در رشته اینترنت و شبکه های گسترده.</p>
+                                    <div class="experience padd-15">
+                                        <h2 class="title">تحصیلات</h2>
+                                        <div class="row">
+                                            <div class="timeline-box padd-15">
+                                                <div class="timeline shadow-dark">
+                                                    <!-- ==== Timeline item Start ==== -->
+                                                        <div class="timeline-item">
+                                                            <div class="circle-dot"></div>
+                                                            <h3 class="timeline-date">
+                                                                <strong>
+                                                                    <i class="fa fa-calendar"></i> 1395 - 1398
+                                                                </strong>
+                                                            </h3>
+                                                            <h4 class="timeline-title">هنرستان</h4>
+                                                            <p class="timeline-text">دوره هنرستان رو در رشته کامپیوتر با معدل 18.00 گذروندم</p>
+                                                        </div>
+                                                        <div class="timeline-item">
+                                                            <div class="circle-dot"></div>
+                                                            <h3 class="timeline-date">
+                                                                <strong>
+                                                                    <i class="fa fa-calendar"></i> 1399 - 1401
+                                                                </strong>
+                                                            </h3>
+                                                            <h4 class="timeline-title">کاردانی</h4>
+                                                            <p class="timeline-text">دوره کاردانی در رشته اینترنت و شبکه های گسترده با معدل 16.00 گذروندم</p>
+                                                        </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="experience padd-15">
-                                    <h3 class="title">آکادمیک</h3>
-                                    <div class="row">
-                                        <div class="timeline-box padd-15">
-                                            <div class="timeline shadow-dark">
-                                                <!-- ==== Timeline item Start ==== -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <strong>
-                                                            <i class="fa fa-calendar"></i> 1398 - 1399
-                                                        </strong>
-                                                    </h3>
-                                                    <h4 class="timeline-title">C# 8.0 In a Nutshell</h4>
-                                                    <p class="timeline-text">
-                                                        بعد از کلی وقت گذاشتن برای ویدئو های آموزشی سایت های فارسی، در آخر به بن بست خوردم به همین دلیل به دنبال منبع آموزشی کامل تری رفتم و به این کتاب رسیدم. برای شروع نسخه 7 این کتاب دردسترس بود و بعد از مدتی نسخه 8 این کتاب منتشر شد. به جرات میتونم بگم 85
-                                                        - 90 درصد این کتاب رو مطالعه کردم و در کدنویسی به کار بردم
-                                                    </p>
-                                                </div>
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <strong>
-                                                            <i class="fa fa-calendar"></i> 1399 - 1400
-                                                        </strong>
-                                                    </h3>
-                                                    <h4 class="timeline-title">ASP.NET Core In Action by Andrew Look</h4>
-                                                    <p class="timeline-text">
-                                                        تعریف این کتاب از زبون برنامه نویس های دات نت باعث شد برای شروع انتخابش کنم. با مطالعه این کتاب به درک زیادی از فریم ورک ASP.NET Core دست پیدا کردم.
-                                                    </p>
-                                                </div>
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <strong>
-                                                            <i class="fa fa-calendar"></i> 1399 - 1400
-                                                        </strong>
-                                                    </h3>
-                                                    <h4 class="timeline-title">Pro ASP.NET Core by Adam Freeman</h4>
-                                                    <p class="timeline-text">
-                                                        این کتاب به اندازه کتاب ASP.NET Core In Action برای من دلچسب نبود و به همین خاطر از مطالعه بخش اول این کتاب صرف نظر کردم و فقط فصل هایی از بخش دوم این کتاب غول رو مطالعه کردم.
-                                                    </p>
-                                                </div>
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <strong>
-                                                            <i class="fa fa-calendar"></i> 1399 - 1400
-                                                        </strong>
-                                                    </h3>
-                                                    <h4 class="timeline-title">دوره API نویسی حرفه ای از محمدجواد ابراهیمی</h4>
-                                                    <p class="timeline-text">
-                                                        علاوه بر API نویسی و احراز هویت توکن بیس، در این دوره فوق العاده به درک عمیقی از Reflection و کاربرد های اون رسیدم.
-                                                    </p>
-                                                </div>
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <strong>
-                                                            <i class="fa fa-calendar"></i> 1400 - 1401
-                                                        </strong>
-                                                    </h3>
-                                                    <h4 class="timeline-title">دوره TDD از حسین عباس آبادی</h4>
-                                                    <p class="timeline-text">
-                                                        به نظر من قشنگترین کاری که یک برنامه نویس میتونه بکنه نوشتن تست برای برنامه هست. با گذروندن این دوره به شدت کیفیت کد هایی که میزدم بالا رفت.
-                                                    </p>
-                                                </div>
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <strong>
-                                                            <i class="fa fa-calendar"></i> 1401 - اکنون
-                                                        </strong>
-                                                    </h3>
-                                                    <h4 class="timeline-title">دوره فروشگاه آنلاین از حسین عباس آبادی</h4>
-                                                    <p class="timeline-text">
-                                                        مفاهیم برنامه نویسی ای که این دوره داشت برای من جدید نبود. هدف من از دیدن این دوره فقط کسب تجربه از سایت های فروشگاهی بود. تجربه هایی مثل پیاده سازی سیستم انبار داری، سیستم تخفیف به صورت اصولی و همچنین سیستم پرداخت آنلاین.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- ==== About Section End ==== -->
-
             <!-- ==== Services Section Start ==== -->
-            <section class="services section hidden" id="services">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>خدمات قابل ارائه</h2>
+                <section class="services section hidden" id="services">
+                    <div class="container">
+                        <div class="row">
+                            <div class="section-title padd-15">
+                                <h2>خدمات قابل ارائه</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- ==== Services item Start ==== -->
+                                <div class="services-item padd-15">
+                                    <div class="services-item-inner">
+                                        <div class="icon">
+                                            <i class="fa fa-laptop-code"></i>
+                                        </div>
+                                        <h2 class="services-title">توسعه وب سایت</h2>
+                                        <h2 class="services-description">توسعه وب سایت های نوشته شده با فریم ورک ASP.NET Core</h2>
+                                    </div>
+                                </div>
+                                <div class="services-item padd-15">
+                                    <div class="services-item-inner">
+                                        <div class="icon">
+                                            <i class="fa fa-user"></i>
+                                        </div>
+                                        <h2 class="services-title">فریلنسر و دورکاری</h2>
+                                        <h2 class="services-description">قبول توسعه پروژه های وب ASP.NET Core با های SQL Server, MongoDB</h2>
+                                    </div>
+                                </div>
+                                <div class="services-item padd-15">
+                                    <div class="services-item-inner">
+                                        <div class="icon">
+                                            <i class="fa fa-flask-vial"></i>
+                                        </div>
+                                        <h2 class="services-title">تست نرم افزار</h2>
+                                        <h2 class="services-description">پیادی سازی انواع تست در نرم افزار های توسعه یافته NET Core.</h2>
+                                    </div>
+                                </div>
+                            <!-- ==== Services item End ==== -->
                         </div>
                     </div>
-                    <div class="row">
-                        <!-- ==== Services item Start ==== -->
-                        <div class="services-item padd-15">
-                            <div class="services-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-laptop-code"></i>
-                                </div>
-                                <h4>توسعه وب سایت</h4>
-                                <p>توسعه وب سایت های نوشته شده با فریم ورک ASP.NET</p>
-                            </div>
-                        </div>
-                        <div class="services-item padd-15">
-                            <div class="services-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-flask-vial"></i>
-                                </div>
-                                <h4>تست نرم افزار</h4>
-                                <p>پیادی سازی انواع تست در نرم افزار های توسعه یافته دات نت</p>
-                            </div>
-                        </div>
-                        <div class="services-item padd-15">
-                            <div class="services-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-database"></i>
-                                </div>
-                                <h4>طراحی دیتابیس</h4>
-                                <p>طراحی دیتابیس های رابطه ای SQL Server و MongoDB</p>
-                            </div>
-                        </div>
-                        <div class="services-item padd-15">
-                            <div class="services-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-user"></i>
-                                </div>
-                                <h4>فریلنسر و دورکاری</h4>
-                                <p>قبول توسعه پروژه های وب ASP.NET و دیتابیس های SQL Server, MongoDB</p>
-                            </div>
-                        </div>
-                        <!-- ==== Services item End ==== -->
-                    </div>
-                </div>
-            </section>
+                </section>
             <!-- ==== Services Section End ==== -->
-
             <!-- ==== Portfolio Section Start ==== -->
-            <section class="portfolio section hidden" id="portfolio">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>نمونه کار ها</h2>
+                <section class="portfolio section hidden" id="portfolio">
+                    <div class="container">
+                        <div class="row">
+                            <div class="section-title padd-15">
+                                <h2>نمونه کار ها</h2>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="portfolio-heading padd-15">
-                            <h2>آخرین پروژه های انجام شده من</h2>
-                        </div>
-                    </div>
-                    <div class="row">
                         <!-- ==== Portfolio item Start ==== -->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/portfolio-1.jpg" alt="">
+                        <div class="row">
+                                <div class="timeline-box padd-15">
+                                    <div class="timeline shadow-dark">
+                                        <!-- ==== Timeline item Start ==== -->
+                                        <div class="timeline-item">
+                                            <div class="timeline-img">
+                                                <img src="images/portfolios/2023-04-15_19-23-27.png" alt="Personal" title="Personal" class="img-fluid" />
+                                            </div>
+                                            <h2 class="timeline-title">Personal</h2>
+                                            <h3 class="timeline-text">پروژه وب سایت شخصی اولین پروژه من بود که وارد مرحله پروداکشن شد. این پروژه در وهله اول یک پروژه ساده و تک لایه بود که رفته رفته با دیدن آموزش و مباحث جدید و پیاده سازی اونها روی پروژه های شخصی خودم ، به چیزی که الان هست رسید. درحال حاضر معماری این پروژه Clean Architecture هست و با الگوی CQRS پیدا شده. سایت طوری طراحی شده که قابل استفاده برای هرکاربری باشه بطوری که بعد از استارت پروژه، درصورت نبود دیتابیس، کاربر به صفحه ثبت نام (اجباری) هدایت میشه و سپس به پنل مدیریت هدایت میشه تا هر قسمت از سایت رو ویرایش کنه. داده های کاربر ابتدا از دیتابیس لود شده و در حافظه Cache ذخیره میشه و بهینه سازی شده برای سئو. نسخه دومی از این پروژه هم وجود داره که SPA هست و با Blazor Server ساخته شده.</h3>
+                                                <div class="timeline-keywords dir-ltr">
+                                                    <h4 class="item">Usage: </h4>
+                                                            <h4 class="item">ASP.NET 6.0 ,</h4>
+                                                            <h4 class="item">LiteDB ,</h4>
+                                                            <h4 class="item">CQRS ,</h4>
+                                                            <h4 class="item">Clean Architecture ,</h4>
+                                                            <h4 class="item">Azure ,</h4>
+                                                            <h4 class="item">MVC ,</h4>
+                                                            <h4 class="item">Razor Pages</h4>
+                                                </div>
+                                            <a href="https://alicoder.ir" class="btn" target="_blank">لینک مرتبط</a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/portfolio-2.jpg" alt="">
+                                <div class="timeline-box padd-15">
+                                    <div class="timeline shadow-dark">
+                                        <!-- ==== Timeline item Start ==== -->
+                                        <div class="timeline-item">
+                                            <div class="timeline-img">
+                                                <img src="images/portfolios/2023-04-16_12-08-21.png" alt="iNotes" title="iNotes" class="img-fluid" />
+                                            </div>
+                                            <h2 class="timeline-title">iNotes</h2>
+                                            <h3 class="timeline-text">بعد از کلی مطالعه در رابطه با Java Script و Ajax ، وقتش رسیده بود که دونسته های خودم رو به یک پروژه کوچیک و کاربردی تبدیل کنم. تمام عملیات CRUD این پروژه بصورت Ajax پیاده سازی شده. پروژه 2 لایه Infrastructure داره. یک لایه برای ارتباط با SQL Server و لایه دوم برای ارتباط با MongoDB. توی این پروژه با چالش های زیادی روبرو شدم که اکثر این چالش ها مربوط به Java Script بودن.</h3>
+                                                <div class="timeline-keywords dir-ltr">
+                                                    <h4 class="item">Usage: </h4>
+                                                            <h4 class="item">ASP.NET 6.0 ,</h4>
+                                                            <h4 class="item">SQL Server ,</h4>
+                                                            <h4 class="item">MongoDB ,</h4>
+                                                            <h4 class="item">Clean Architecture ,</h4>
+                                                            <h4 class="item">CQRS ,</h4>
+                                                            <h4 class="item">JavaScript ,</h4>
+                                                            <h4 class="item">Ajax ,</h4>
+                                                            <h4 class="item">Bootstrap</h4>
+                                                </div>
+                                            <a href="http://inotes.ir" class="btn" target="_blank">لینک مرتبط</a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/portfolio-3.jpg" alt="">
+                                <div class="timeline-box padd-15">
+                                    <div class="timeline shadow-dark">
+                                        <!-- ==== Timeline item Start ==== -->
+                                        <div class="timeline-item">
+                                            <div class="timeline-img">
+                                                <img src="images/portfolios/2023-05-24_08-33-02.png" alt="Coding Books" title="Coding Books" class="img-fluid" />
+                                            </div>
+                                            <h2 class="timeline-title">Coding Books</h2>
+                                            <h3 class="timeline-text">بین پروژه هایی که کد زدم که اکثر اون ها بر پایه دیتا محور بودن، جای پروژه دانلود محور رو احساس کردم و استارت پروژه Coding Books رو زدم. این پروژه بسیار ساده و تک لایه ساخته شده و طبق معمول از سیستم Caching هم برای این پروژه نوشتم چون پرفورمنس و سئو برای من اولویت بالایی داره. در این پروژه نکات سئو رعایت شده و پیج ها SEO Friendly طراحی شدن به واسطه این پروژه من با سیستم دانلود فایل، Stream ها و همچنین Content Type ها بیشتر آشنا شدم</h3>
+                                                <div class="timeline-keywords dir-ltr">
+                                                    <h4 class="item">Usage: </h4>
+                                                            <h4 class="item">ASP.NET 6.0 ,</h4>
+                                                            <h4 class="item">SQL Server ,</h4>
+                                                            <h4 class="item">Caching ,</h4>
+                                                            <h4 class="item">Bootstrap ,</h4>
+                                                            <h4 class="item">JavaScript</h4>
+                                                </div>
+                                            <a href="http://codingbooks.ir" class="btn" target="_blank">لینک مرتبط</a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/portfolio-4.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/portfolio-5.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/portfolio-6.jpg" alt="">
-                                </div>
-                            </div>
                         </div>
                         <!-- ==== Portfolio item End ==== -->
                     </div>
-                </div>
-            </section>
+                </section>
             <!-- ==== Portfolio Section End ==== -->
-
             <!-- ==== Contact Section Start ==== -->
             <section class="contact section hidden" id="contact">
                 <div class="container">
@@ -427,68 +381,81 @@
                             <h2>تماس با من</h2>
                         </div>
                     </div>
-                    <h3 class="contact-title padd-15">اگر سوالی از من دارید</h3>
-                    <h4 class="contact-sub-title padd-15">من در خدمت شما هستم</h4>
+                    <h3 class="contact-title padd-15">راه های ارتباط با من</h3>
+                    <h4 class="contact-sub-title padd-15">اگر سوال یا پیشنهاد همکاری داری از راه های زیر میتونی با من در ارتباط باشی</h4>
                     <div class="row">
                         <!-- ==== Contact info item Start ==== -->
-                        <div class="contact-info-item padd-15">
+                        <div class="contact-info-item dir-ltr padd-15">
                             <div class="icon"><i class="fa fa-phone"></i></div>
                             <h4>تماس</h4>
-                            <p>+98 910 478 5650</p>
+                            <a href="tel:&#x2B;989104785650">&#x2B;98 910 478 5650</a>
                         </div>
                         <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-marker"></i></div>
+                            <div class="icon"><i class="fa fab fa-linkedin-in"></i></div>
                             <h4>لینکدین</h4>
-                            <p>Islamabad</p>
+                            <a href="https://www.linkedin.com/in/ali-kadkhodazadeh-74b0b8217" target="_blank">صفحه لینکدین</a>
                         </div>
                         <div class="contact-info-item padd-15">
                             <div class="icon"><i class="fa fa-envelope"></i></div>
                             <h4>ایمیل</h4>
-                            <p>ali.kdz80@gmail.com</p>
+                            <a href="cdn-cgi/l/email-protection#badbd6d394d1dec0828afaddd7dbd3d694d9d5d7"><span class="__cf_email__" data-cfemail="caaba6a3e4a1aeb0f2fa8aada7aba3a6e4a9a5a7">[email&#160;protected]</span></a>
                         </div>
                         <div class="contact-info-item padd-15">
                             <div class="icon"><i class="fa fa-globe-europe"></i></div>
                             <h4>وب سایت</h4>
-                            <p>www.alicoder.com</p>
+                            <p><a href="https://alicoder.ir">alicoder.ir</a></p>
                         </div>
                         <!-- ==== Contact info item End ==== -->
                     </div>
-                    <h3 class="contact-title padd-15">بهم ایمیل بزن</h3>
-                    <h4 class="contact-sub-title padd-15">در اسرع وقت جوابت رو میدم</h4>
+                    <strong class="contact-title padd-15">میتونی برام پیغام بزاری</strong>
+                    <p class="contact-sub-title padd-15">در اسرع وقت جوابت رو میدم</p>
+                    <strong class="contact-message"></strong>
                     <!-- ==== Contact form Start ==== -->
+                    <div class="padd-15 error-messages">
+                        <ul>
+                            
+                        </ul>
+                    </div>
                     <div class="row">
                         <div class="contact-form padd-15">
-                            <div class="row">
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="نام" />
+                            <form method="post">
+                                <div class="row">
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input class="form-control" placeholder="نام" type="text" data-val="true" data-val-required="The Name field is required." id="Command_Name" name="Command.Name" value="" />
+                                            <span class="validation-message field-validation-valid" data-valmsg-for="Command.Name" data-valmsg-replace="true"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input class="form-control" placeholder="ایمیل" type="text" data-val="true" data-val-required="The Email field is required." id="Command_Email" name="Command.Email" value="" />
+                                            <span class="validation-message field-validation-valid" data-valmsg-for="Command.Email" data-valmsg-replace="true"></span>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="ایمیل" />
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <input class="form-control" placeholder="موضوع" type="text" data-val="true" data-val-required="The Subject field is required." id="Command_Subject" name="Command.Subject" value="" />
+                                            <span class="validation-message field-validation-valid" data-valmsg-for="Command.Subject" data-valmsg-replace="true"></span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="موضوع" />
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <textarea class="form-control" placeholder="متن پیام" data-val="true" data-val-required="The Text field is required." id="Command_Text" name="Command.Text">
+</textarea>
+                                            <span class="validation-message field-validation-valid" data-valmsg-for="Command.Text" data-valmsg-replace="true"></span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <textarea class="form-control" cols="30" rows="10" placeholder="پیام"></textarea>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <button type="submit" class="btn">ارسال</button>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <button type="submit" class="btn">ارسال</button>
-                                </div>
-                            </div>
+                            <input name="__RequestVerificationToken" type="hidden" value="CfDJ8N-TYg_dS49PuvqudCf-LU8F_RINBqTOoss8NZjXBubM-9IRUjrLYeyysUhfd0j92bPC9P4jM4In9pBC-ta4KfjOXJxJkK9bqi1b0yUK4Ox5L6_o23QvZuK2Q10RUOYRPKF5fmChDK1jpYc-7KWbNHw" /></form>
                         </div>
                     </div>
                     <!-- ==== Contact form End ==== -->
@@ -499,25 +466,14 @@
         <!-- ==== Main Content End ==== -->
     </div>
     <!-- ==== Main Container End ==== -->
-
     <!-- ==== Style Switcher Start ==== -->
     <div class="style-switcher">
-        <div class="style-switcher-toggler s-icon">
-            <i class="fas fa-cog fa-spin"></i>
-        </div>
         <div class="day-night s-icon">
             <i class="fas fa-moon"></i>
         </div>
-        <h4>Theme Colors</h4>
-        <div class="colors">
-            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
-            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
-            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
-            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
-            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
-        </div>
     </div>
     <!-- ==== Style Switcher End ==== -->
+    <!-- ==== JS Files ==== -->
+    <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/bundle.min.js"></script>
 </body>
-
 </html>
